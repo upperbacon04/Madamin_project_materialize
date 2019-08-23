@@ -15,16 +15,349 @@
 
 <body>
   
+<nav class="blue darken-2">
+  <div class="container">
+    <div class="nav-wrapper"><a href="index.html" class="brand-logo">Madmin</a>
+
+      <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
+        <i class="material-icons">menu</i>
+      </a>
+
+      <ul class="right hide-on-med-and-down">
+        <li class="active">
+          <a href="index.html">Dashboard</a>
+        </li>
+        <li>
+          <a href="posts.html">Posts</a>
+        </li>
+        <li>
+          <a href="categories.html">Categories</a>
+        </li>
+        <li>
+          <a href="comments.html">Comments</a>
+        </li>
+        <li>
+          <a href="user.html">User</a>
+        </li>
+      </ul>
+
+      <!-- SIDENAV -->
+<ul id="side-nav" class="side-nav">
+<li>
+  <div class="user-view">
+    <div class="background"><img src="img/ocean.jpg" alt="">
+    </div>
+    <a href="">
+      <img src="img/person1.jpg" class="circle" alt="">
+    </a>
+    <a href="#"><span class="name white-text">John Doe</span></a>
+    <a href="#"><span class="email white-text">doe@gmail.com</span></a>
+  </div>
+</li>
+<li><a href="index.html"><i class="material-icons">dashboard</i>Dashboard</a>
+</li>
+<li><a href="post.html">Posts</a></li>
+<li><a href="categories.html">Categories</a></li>
+<li><a href="comments.html">Comments</a></li>
+<li><a href="user.html">Users</a></li>
+<li class="divider"></li>
+<li><a class="subheader">Account Controls</a></li>
+<li><a href="login.html" class="waves-effect waves-light">Logout</a></li>
+</ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- SECTION: STATS -->
+<section class="section section-stats center">
+  <div class="row">
+    <div class="col s12 m6 l3">
+      <div class="card-panel blue lighten-1 white-text center">
+        <i class="material-icons medium">insert_emoticon</i>
+        <h5>Monthly Visits</h5>
+        <h3 class="count">28300</h3>
+
+        <div class="progress grey lighten-2">
+            <div class="determinate lime" style="width: 40%;"></div>
+          </div>
+
+      </div>
+    </div>
+    <div class="col s12 m6 l3">
+      <div class="card-panel blue lighten-1 white-text center">
+        <i class="material-icons medium">mode_edit</i>
+        <h5>Blog Posts</h5>
+        <h3 class="count">500</h3>
+
+        <!-- Progress determiner -->
+        <div class="progress grey lighten-2">
+            <div class="determinate lime" style="width: 40%;"></div>
+          </div>
+        <!-- /Progress determiner -->
+      </div>
+    </div>
+
+    <div class="col s12 m6 l3">
+      <div class="card-panel blue lighten-1 white-text center">
+        <i class="material-icons medium">mode_comment</i>
+        <h5>Comments</h5>
+        <h3 class="count">950542</h3>
+
+        <!-- Progress determiner -->
+        <div class="progress grey lighten-2">
+            <div class="determinate lime" style="width: 85%;"></div>
+          </div>
+        <!-- /Progress determiner -->
+      </div>
+    </div>
+
+    <div class="col s12 m6 l3">
+      <div class="card-panel blue lighten-1 white-text center">
+        <i class="material-icons medium">supervisor_account</i>
+        <h5>Users</h5>
+        <h3 class="count">6000</h3>
+
+        <!-- Progress determiner -->
+        <div class="progress grey lighten-2">
+          <div class="determinate lime" style="width: 50%;"></div>
+        </div>
+        <!-- /Progress determiner -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- (CHART) VISITOR -->
+
+<section class="section section-visitor blue lighten-4">
+  <div class="row">
+
+    <div class="col s12 m6 l8">
+      <div class="card-panel">
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4">
+      <ul class="collection with-header latest-comments">
+
+        <li class="collection-header">
+          <h5>Latest Comments</h5>
+        </li>
+
+        <li class="collection-item avatar">
+          <img src="img/person1.jpg" alt="" class="circle">
+          <span class="card-title">John Doe</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ut ratione pariatur eius! Beatae ex aliquam explicabo aut, unde perferendis?</p>
+          <a href="#" class="approve green-text">Approve</a> |
+          <a href="#" class="deny red-text">Deny</a>
+        </li>
+        
+        <li class="collection-item avatar">
+          <img src="img/person2.jpg" alt="" class="circle">
+          <span class="card-title">Steve Smith</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ut ratione pa</p>
+          <a href="#" class="approve green-text">Approve</a> |
+          <a href="#" class="deny red-text">Deny</a>
+        </li>
+        
+        <li class="collection-item avatar">
+          <img src="img/person3.jpg" alt="" class="circle">
+          <span class="card-title">Ellen Williams</span>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+          <a href="#" class="approve green-text">Approve</a> |
+          <a href="#" class="deny red-text">Deny</a>
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- RECENT POSTS & TOOLS -->
+
+<section class="section section-recent">
+  <div class="row">
+    <div class="col s12 l8 m6">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Recent Posts</span>
+
+          <table class="striped">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Post 1</td>
+                <td>Web Development</td>
+                <td>
+                  <a href="#" class="btn blue lighten-2">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Post 2</td>
+                <td>Creative Web Design</td>
+                <td>
+                  <a href="#" class="btn blue lighten-2">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Post 3</td>
+                <td>Video Editing</td>
+                <td>
+                  <a href="#" class="btn blue lighten-2">Details</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Quick TODOS</span>
+
+          <form id="todo-form">
+            <div class="input-field">
+              <input type="text" placeholder="Add To do..." id="todo">
+            </div>
+          </form>
+          <ul class="collection todos">
+
+            <li class="collection-item">
+              <div>
+                To do One
+                <a href="#!" class="secondary-content delete">
+                  <i class="material-icons">close</i>
+                </a>
+              </div>
+            </li>
+
+            <li class="collection-item">
+              <div>
+                To do Two
+                <a href="#!" class="secondary-content delete">
+                  <i class="material-icons">close</i>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRELOADER -->
+
+<div class="loader preloader-wrapper big active">
+  <div class="spinner-layer spinner-blue-only">
+    <div class="circle-clipper left">
+      <div class="circle"></div>
+    </div>
+
+    <div class="gap-patch">
+      <div class="circle"></div>
+    </div>
+
+    <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+
+  </div>
+</div>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <script src="js/chart.js"></script>
+
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
   <script>
-    $(document).ready(function () {
+
+    $('.section').hide();
+
+setTimeout(function() {
+
+  $(document).ready(function () {
+
       //Init Side nav
-      
+      $('.button-collapse').sideNav();
+      // SHOW SECTIONS
+      $('.section').fadeIn();
+      // HIDE PRELOADER
+      $('.loader').fadeOut();
+      // COUNTER
+      $('.count').each(function() {
+
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          }
+        })
+
+      });
+
+      // COMMENT TOAST APPROVED/DENIED
+      $('.approve').click(function(e) {
+        Materialize.toast('Comment Approved', 2000 ,'rounded');
+        e.preventDefault();
+      }); 
+
+      $('.deny').click(function(e) {
+        Materialize.toast('Comment Denied', 2000 ,'rounded');
+        e.preventDefault();
+      });
+
+      // QUICK TODOS
+      $('#todo-form').submit(function(e) {
+        const output = `<li class="collection-item">
+            <div>
+                ${$('#todo').val()}
+                <a href="#!" class="secondary-content delete">
+                  <i class="material-icons">close</i>
+                </a>
+              </div>
+              </li>`;
+
+              $('.todos').append(output);
+
+              Materialize.toast('To do Added', 3000 , 'rounded');
+
+        e.preventDefault();
+
+      });
+
+
+      // DELETE TODOS
+      $('.delete').on('click', function(e) {
+        $(this).parent().parent().remove();
+        Materialize.toast('To do Deleted', 3000 , 'rounded');
+      });
+
 
     });
+
+}, 2000);
+
+
   </script>
 </body>
 
